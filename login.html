@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Science - Login</title>
+  <link rel="stylesheet" href="login_page.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="login-container">
+  
+    <h1>Computer Science</h1>
+    <h2>Login / Register</h2>
+  
+    <form action="login.php" method="post">
+      <div class="input-group">
+        <label for="username">Index Number</label>
+        <input type="text"  name="indexnumber" placeholder="Index Number" required minlength="10">
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" name="password"  placeholder="Enter Password" required minlength="6" >
+      </div>
+    <div class="forgetpass-link">
+      <p> <a href="forgetpass.html">Forgot Password</a></p>
+    </div>
+      <button type="submit">Login <a href="homepage.html"> </a></button>
+    
+    </form>
+    <div class="register-link">
+      <p>Don't have an account? <a href="signup.html">Register </a></p>
+    </div>
+  </div>
+</body>
+</html>

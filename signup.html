@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Science - Register</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+  <div class="background"> </div>
+  <div class="login-container">
+
+      <h1>COMPUTER SCIENCE</h1>
+      <h4>Geek minds, Tech driven</h4>
+    </header>
+
+    <div id="form">
+      <h2>Join the team today!</h2>
+      <hr><br>
+      <form action="registration.php" method="POST" enctype="multipart/form-data">
+
+        <div class="input-group">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" required> <br><br>
+          
+        <div class="input-group">
+          <label for="middlename">Middle Name(Optional)</label>
+          <input type="text" id="middlename" name="middlename"> <br> <br>
+        </div>
+
+        <div class="input-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" required> <br><br>
+        </div>
+
+        <div class="input-group">
+        <label for="indexnumber">Index Number</label>
+        <input type="text" id="indexnumber" placeholder="UEB*******" name="indexnumber"> <br><br>
+      </div>
+
+      <div class="input-group">
+        <label for="birthday">Date of Birth</label>
+        <input type="date" id="birthday" name="birthday"> <br><br>
+      </div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"  minlength="6" required> <br><br>
+
+        <label for="password">Confirm Password</label>
+        <input type="password" id="password" name="ConfirmPassword" minlength="6" required> <br><br>
+        
+        <label for="phone">Telephone</label>
+        <input type="text" id="phone" placeholder="+233 123 456 789" name="phone"  required> <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required> <br><br>
+      </div>
+        
+      <div >
+        <br><br>
+      </div>
+      <div class="image">
+        <label for="picture">Select an Profile Picture</label>
+        <input type="file" id="picture" name="picture" accept="image/png, image/jpeg,image/jpg" required> <br><br>
+        <input type="checkbox" id="agreement" required>
+        <label for="agreement">I agree and accept to the teams <a href="Terms & Conditions.pdf" onclick="openInNewTab('https://example.com'); return false;">terms and conditions.</a></label>
+      </div>
+        <br><br>
+      </div>
+      <button type="submit">Submit </button>
+      <p><input type="reset"></p>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
